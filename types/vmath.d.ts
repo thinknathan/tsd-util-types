@@ -1,5 +1,13 @@
-/** @noSelfInFile */
+/**
+ * tsd-util-types
+ * @license CC0-1.0
+ * @noSelfInFile
+ */
 
+// Operator math types for vector math
+// @see https://typescripttolua.github.io/docs/advanced/language-extensions#operator-map-types
+
+/** */
 declare namespace vmath {
 	/**
 	 * Addition Operator for Vector Math

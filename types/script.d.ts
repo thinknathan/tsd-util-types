@@ -1,9 +1,11 @@
-/** @noSelfInFile */
-
 /**
- * Script lifecycle types
- * @see https://defold.com/manuals/script/
+ * tsd-util-types
+ * @license CC0-1.0
+ * @noSelfInFile
  */
+
+// Script lifecycle types
+// @see https://defold.com/manuals/script/
 
 /**
  * Called when the component is initialized.
@@ -40,7 +42,7 @@ declare type ScriptOnMessage<T> = (
 declare type ScriptOnInput<T> = (
 	this: T,
 	action_id: hash,
-	action: go.input_message,
+	action: InputMessage,
 ) => void;
 
 /**
