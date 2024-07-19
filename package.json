@@ -1,0 +1,36 @@
+{
+	"name": "tsd-util-types",
+	"version": "1.0.0",
+	"description": "",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thinknathan/tsd-util-types.git"
+	},
+	"author": "Nathan Bolton (https://thinknathan.ca/)",
+	"license": "CC0-1.0",
+	"main": "./index.d.ts",
+	"types": "./index.d.ts",
+	"files": [
+		"index.d.ts",
+		"types"
+	],
+	"scripts": {
+		"ci": "tsc --noEmit && npm run lint",
+		"lint": "eslint ./*.ts",
+		"prettier": "prettier --write ./"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.3.0",
+		"@commitlint/config-conventional": "^19.2.2",
+		"@ts-defold/types": "^1.2.47",
+		"eslint": "^8.56.0",
+		"husky": "^9.0.11",
+		"prettier": "^3.1.0",
+		"typescript": "5.5.2",
+		"typescript-eslint": "^7.6.0",
+		"typescript-to-lua": "~1.26.0"
+	},
+	"peerDependencies": {
+		"typescript-to-lua": ">=1.0.0"
+	}
+}
