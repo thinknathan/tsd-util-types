@@ -7,7 +7,7 @@
 // Defold engine messages
 
 /** */
-export type generic_message =
+declare type generic_message =
 	| LuaMap<AnyNotNil, AnyNotNil>
 	| { [key: string | number | symbol]: AnyNotNil };
 
@@ -45,37 +45,37 @@ declare type model_animation_done_message = {
 };
 
 // RENDER
-export type clear_color_message = { color: vmath.vector4 };
-export type draw_debug_text_message = {
+declare type clear_color_message = { color: vmath.vector4 };
+declare type draw_debug_text_message = {
 	position: vmath.vector3;
 	text: string;
 	color: vmath.vector4;
 };
-export type draw_line_message = {
+declare type draw_line_message = {
 	start_point: vmath.vector3;
 	end_point: vmath.vector3;
 	color: vmath.vector4;
 };
-export type resize_message = { height: number; width: number };
-export type window_resized_message = { height: number; width: number };
+declare type resize_message = { height: number; width: number };
+declare type window_resized_message = { height: number; width: number };
 
 // SOUND
-export type play_sound_message = {
+declare type play_sound_message = {
 	delay?: number;
 	gain?: number;
 	play_id?: number;
 };
-export type set_gain_message = { gain: number };
-export type sound_done_message = { play_id: number };
-export type sound_stopped_message = { play_id: number };
+declare type set_gain_message = { gain: number };
+declare type sound_done_message = { play_id: number };
+declare type sound_stopped_message = { play_id: number };
 
 // SPRITE
-export type animation_done_message = { current_tile: number; id: hash };
-export type play_animation_message = { id: hash };
+declare type animation_done_message = { current_tile: number; id: hash };
+declare type play_animation_message = { id: hash };
 
 // SYS
-export type exit_message = { code: number };
-export type reboot_message = {
+declare type exit_message = { code: number };
+declare type reboot_message = {
 	arg1?: string;
 	arg2?: string;
 	arg3?: string;
@@ -83,9 +83,9 @@ export type reboot_message = {
 	arg5?: string;
 	arg6?: string;
 };
-export type set_update_frequency_message = { frequency: number };
-export type set_vsync_message = { swap_interval: number };
-export type start_record_message = {
+declare type set_update_frequency_message = { frequency: number };
+declare type set_vsync_message = { swap_interval: number };
+declare type start_record_message = {
 	file_name: string;
 	frame_period?: number;
 	fps?: number;

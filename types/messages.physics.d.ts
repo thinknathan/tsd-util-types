@@ -8,7 +8,7 @@
 // @see https://defold.com/manuals/physics-messages/
 
 /** */
-export type ray_cast_response_message = {
+declare type ray_cast_response_message = {
 	fraction: number;
 	position: vmath.vector3;
 	normal: vmath.vector3;
@@ -17,16 +17,16 @@ export type ray_cast_response_message = {
 	request_id: number;
 };
 
-export type ray_cast_missed_message = { request_id: number };
+declare type ray_cast_missed_message = { request_id: number };
 
-export type trigger_response_message = {
+declare type trigger_response_message = {
 	other_id: hash;
 	enter: boolean;
 	other_group: hash;
 	own_group: hash;
 };
 
-export type contact_point_response_message = {
+declare type contact_point_response_message = {
 	position: vmath.vector3;
 	normal: vmath.vector3;
 	relative_velocity: vmath.vector3;
@@ -41,14 +41,14 @@ export type contact_point_response_message = {
 	own_group: hash;
 };
 
-export type collision_response_message = {
+declare type collision_response_message = {
 	other_id: hash;
 	other_position: vmath.vector3;
 	other_group: hash;
 	own_group: hash;
 };
 
-export type apply_force_message = {
+declare type apply_force_message = {
 	force: vmath.vector3;
 	position: vmath.vector3;
 };
