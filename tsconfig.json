@@ -8,11 +8,7 @@
 		"sourceMap": false,
 		"strict": true,
 		"target": "ES2020",
-		"typeRoots": [
-			"./@types",
-			"./node_modules/@types",
-			"./node_modules/@typescript-to-lua"
-		]
+		"typeRoots": ["./@types", "./node_modules/@typescript-to-lua"]
 	},
 	"exclude": ["./node_modules/*", "./dist/*"]
 }
